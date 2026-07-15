@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmento — Climate Awareness for Howard County, Maryland</title>
+  <meta name="description" content="A community education resource on flooding, extreme heat, and stormwater in Howard County, Maryland, built from official county and state data.">
+  <link rel="icon" href="assets/images/environmento-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__bar">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/images/environmento-logo.png" alt="Environmento logo: a tree with circuit-like branches rooted above a winding river, encircled by houses and rowhomes">
+        <span class="brand__text">
+          <span class="brand__name">Environmento</span>
+          <span class="brand__tagline">Community &middot; Technology &middot; Nature</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pages/issues.html">Issues</a></li>
+          <li><a href="pages/hotspots.html">Hotspots</a></li>
+          <li><a href="pages/data.html">Data</a></li>
+          <li><a href="pages/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <svg class="topo-line env-anim" viewBox="0 0 1200 48" width="1200" height="48" preserveAspectRatio="none" aria-hidden="true">
+      <path class="env-wave-line" d="M -140 24 Q -105 15, -70 23.65 Q -35 32, 0 24 Q 35 14, 70 23.65 Q 105 31.5, 140 24.35 Q 175 14.5, 210 23.475 Q 245 32.5, 280 24.175 Q 315 13.5, 350 23.825 Q 385 32, 420 24.525 Q 455 15, 490 23.65 Q 525 32, 560 24 Q 595 14, 630 23.65 Q 665 31.5, 700 24.35 Q 735 14.5, 770 23.475 Q 805 32.5, 840 24.175 Q 875 13.5, 910 23.825 Q 945 32, 980 24.525 Q 1015 15, 1050 23.65 Q 1085 32, 1120 24 Q 1155 14, 1190 23.65 Q 1225 31.5, 1260 24.35 Q 1295 14.5, 1330 23.475 Q 1365 32.5, 1400 24.175" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+    </svg>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <span class="eyebrow hero__eyebrow">Howard County, Maryland</span>
+          <h1>The Patapsco doesn&rsquo;t care about your commute.</h1>
+          <p class="hero__lede">Ellicott City has flooded twice in the last decade in ways it hadn&rsquo;t in the previous fifty years. Wilde Lake gets hotter, longer, than the rest of the county. This is a plain look at why, backed by the county&rsquo;s own numbers &mdash; not a forecast, an explainer.</p>
+          <a class="hero-cta" href="pages/hotspots.html">
+            <span>See the hotspot map</span>
+            <span class="hero-cta__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <div class="hero__aside">
+          <div>
+            <span class="hero__stat">60%</span>
+            <span class="hero__stat-label">County target for cutting greenhouse gas emissions by 2030<sup><a href="#cite-1">1</a></sup></span>
+          </div>
+          <div>
+            <span class="hero__stat">52%</span>
+            <span class="hero__stat-label">Share of county emissions from transportation, the single largest source<sup><a href="#cite-1">1</a></sup></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint env-anim" aria-hidden="true">
+        <svg viewBox="0 0 48 72" width="48" height="72" xmlns="http://www.w3.org/2000/svg">
+          <g class="env-scroll" fill="none" stroke="#2E4034" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="24" y1="10" x2="24" y2="44"></line>
+            <path d="M 14 42 L 24 54 L 34 42"></path>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section teasers">
+      <div class="wrap">
+        <div class="teasers__head">
+          <div>
+            <span class="eyebrow">Three things worth understanding</span>
+            <h2>What&rsquo;s actually changing here</h2>
+          </div>
+          <a class="teasers__link" href="pages/issues.html">Read the full explainers &rarr;</a>
+        </div>
+
+        <div class="teaser-grid">
+          <article class="teaser reveal">
+            <span class="teaser__tag teaser__tag--flood">Flooding</span>
+            <h3>A valley built for water, and a town built in it</h3>
+            <p>Historic Ellicott City sits where five streams converge before reaching the Patapsco. The July 2016 and May 2018 flash floods moved cars and collapsed buildings on Main Street in under two hours.</p>
+            <a class="teaser__more" href="pages/issues.html#flooding">Read more &rarr;</a>
+          </article>
+          <article class="teaser reveal">
+            <span class="teaser__tag teaser__tag--heat">Extreme heat</span>
+            <h3>Some neighborhoods run hotter than others, by design</h3>
+            <p>Parking lots, warehouse roofs, and thin tree canopy along Route 1 and around Wilde Lake Village Center trap heat well past sundown &mdash; a pattern the county can map block by block.</p>
+            <a class="teaser__more" href="pages/issues.html#heat">Read more &rarr;</a>
+          </article>
+          <article class="teaser reveal">
+            <span class="teaser__tag teaser__tag--water">Stormwater &amp; water quality</span>
+            <h3>Where the rain goes matters as much as how much falls</h3>
+            <p>Impervious surface across Columbia and the Route 1 corridor sends stormwater straight into streams that feed the Patapsco, carrying road salt, sediment, and runoff with it.</p>
+            <a class="teaser__more" href="pages/issues.html#stormwater">Read more &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout reveal">
+      <div class="wrap callout__grid">
+        <div>
+          <span class="eyebrow">The centerpiece of this site</span>
+          <h2>Look up the places you actually live near</h2>
+          <p>An interactive map of documented flood, heat, and water-quality hotspots across the county &mdash; Ellicott City, Wilde Lake, the Route 1 corridor, and the Patapsco lowlands &mdash; each with sourcing and a synced, keyboard-navigable list.</p>
+        </div>
+        <a class="hero-cta" href="pages/hotspots.html">
+          <span>Open the hotspot map</span>
+          <span class="hero-cta__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap prose">
+        <span class="eyebrow">Why this site exists</span>
+        <h2>Local data, read plainly</h2>
+        <p>Howard County already publishes serious climate and flood data through Climate Forward and its open-data GIS portal. Most residents never see it, because dashboards built for planners aren&rsquo;t built for a resident trying to figure out whether their street floods or their block runs hot. Environmento exists to translate that public data into something you can read in five minutes and use &mdash; not to replace the official tools, but to point you toward them with context attached.</p>
+      </div>
+    </section>
+    <section class="wrap citations">
+      <h2>Sources</h2>
+      <ol>
+        <li id="cite-1">Howard County Office of Community Sustainability, <em>Climate Forward</em> dashboard — emissions targets and sector breakdown. <a href="https://climateforward.howardcountymd.gov/" target="_blank" rel="noopener">climateforward.howardcountymd.gov</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="topo-line topo-line--footer env-anim" viewBox="0 0 1200 48" width="1200" height="48" preserveAspectRatio="none" aria-hidden="true">
+      <path class="env-wave-line" d="M -140 24 Q -105 15, -70 23.65 Q -35 32, 0 24 Q 35 14, 70 23.65 Q 105 31.5, 140 24.35 Q 175 14.5, 210 23.475 Q 245 32.5, 280 24.175 Q 315 13.5, 350 23.825 Q 385 32, 420 24.525 Q 455 15, 490 23.65 Q 525 32, 560 24 Q 595 14, 630 23.65 Q 665 31.5, 700 24.35 Q 735 14.5, 770 23.475 Q 805 32.5, 840 24.175 Q 875 13.5, 910 23.825 Q 945 32, 980 24.525 Q 1015 15, 1050 23.65 Q 1085 32, 1120 24 Q 1155 14, 1190 23.65 Q 1225 31.5, 1260 24.35 Q 1295 14.5, 1330 23.475 Q 1365 32.5, 1400 24.175" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+    </svg>
+    <div class="wrap site-footer__top">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__brand">
+            <img src="assets/images/environmento-logo.png" alt="" width="34" height="34">
+            <span>Environmento</span>
+          </div>
+          <p>A community education project connecting Howard County residents to the climate data their own county already collects.</p>
+        </div>
+        <div>
+          <h2>Site</h2>
+          <ul>
+            <li><a href="pages/issues.html">Issues</a></li>
+            <li><a href="pages/hotspots.html">Hotspots map</a></li>
+            <li><a href="pages/data.html">Data sources</a></li>
+            <li><a href="pages/about.html">About &amp; methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Official tools</h2>
+          <ul>
+            <li><a href="https://climateforward.howardcountymd.gov/" target="_blank" rel="noopener">Climate Forward dashboard</a></li>
+            <li><a href="https://data.howardcountymd.gov/" target="_blank" rel="noopener">Howard County Open Data</a></li>
+            <li><a href="https://data.imap.maryland.gov/" target="_blank" rel="noopener">Maryland iMAP catalog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <span>&copy; <span id="current-year">2026</span> Environmento. A community project, not a government publication.</span>
+      <span>Data last reviewed 2026-07-06.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

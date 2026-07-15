@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Sun with thin rays fading in and out one at a time">
+  
+  <circle cx="80" cy="80" r="26" fill="none" stroke="#A87D2E" stroke-width="1.75"></circle>
+  <line class="env-sun-ray" style="animation-delay:0.0s" x1="80.0" y1="42.0" x2="80.0" y2="27.0" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:1.5s" x1="106.9" y1="53.1" x2="119.2" y2="40.8" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:3.0s" x1="118.0" y1="80.0" x2="131.5" y2="80.0" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:4.5s" x1="106.9" y1="106.9" x2="118.2" y2="118.2" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:6.0s" x1="80.0" y1="118.0" x2="80.0" y2="131.0" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:7.5s" x1="53.1" y1="106.9" x2="41.5" y2="118.5" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:9.0s" x1="42.0" y1="80.0" x2="28.0" y2="80.0" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+  <line class="env-sun-ray" style="animation-delay:10.5s" x1="53.1" y1="53.1" x2="41.1" y2="41.1" stroke="#A87D2E" stroke-width="1.75" stroke-linecap="round"></line>
+</svg>

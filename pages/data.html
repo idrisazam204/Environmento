@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sources — Environmento</title>
+  <meta name="description" content="Annotated links to Howard County's Climate Forward dashboard, Open Data GIS portal, and Maryland iMAP so residents can look up their own address.">
+  <link rel="icon" href="../assets/images/environmento-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__bar">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../assets/images/environmento-logo.png" alt="Environmento logo: a tree with circuit-like branches rooted above a winding river, encircled by houses and rowhomes">
+        <span class="brand__text">
+          <span class="brand__name">Environmento</span>
+          <span class="brand__tagline">Community &middot; Technology &middot; Nature</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" type="button">
+        <span class="visually-hidden">Toggle menu</span>&#9776;
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="issues.html">Issues</a></li>
+          <li><a href="hotspots.html">Hotspots</a></li>
+          <li><a href="data.html" aria-current="page">Data</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <svg class="topo-line env-anim" viewBox="0 0 1200 48" width="1200" height="48" preserveAspectRatio="none" aria-hidden="true">
+      <path class="env-wave-line" d="M -140 24 Q -105 15, -70 23.65 Q -35 32, 0 24 Q 35 14, 70 23.65 Q 105 31.5, 140 24.35 Q 175 14.5, 210 23.475 Q 245 32.5, 280 24.175 Q 315 13.5, 350 23.825 Q 385 32, 420 24.525 Q 455 15, 490 23.65 Q 525 32, 560 24 Q 595 14, 630 23.65 Q 665 31.5, 700 24.35 Q 735 14.5, 770 23.475 Q 805 32.5, 840 24.175 Q 875 13.5, 910 23.825 Q 945 32, 980 24.525 Q 1015 15, 1050 23.65 Q 1085 32, 1120 24 Q 1155 14, 1190 23.65 Q 1225 31.5, 1260 24.35 Q 1295 14.5, 1330 23.475 Q 1365 32.5, 1400 24.175" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+    </svg>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head reveal">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / Data</p>
+      <span class="eyebrow">Go straight to the source</span>
+      <h1>The public data behind this site</h1>
+      <p class="page-head__lede">Environmento doesn&rsquo;t collect or host any original data &mdash; everything here traces back to three public sources. If you want a property-level answer rather than a countywide overview, these are the tools built for that.</p>
+    </div>
+
+    <section class="wrap section--tight">
+      <div class="data-source-card reveal">
+        <span class="data-source-card__meta">Source 1 &middot; County climate strategy</span>
+        <h3>Howard County Climate Forward</h3>
+        <p>The county&rsquo;s official climate action dashboard, built around its goal to cut greenhouse gas emissions 60% by 2030. It breaks emissions down by sector (transportation is the largest at roughly 52%, energy use roughly 39%) and includes the county&rsquo;s heat vulnerability index and flood risk summaries &mdash; the same figures cited throughout this site.</p>
+        <p><strong>Use it for:</strong> understanding countywide emissions targets and progress, and for the heat vulnerability rankings behind sites like Wilde Lake Village Center.</p>
+        <a class="data-source-card__link" href="https://climateforward.howardcountymd.gov/" target="_blank" rel="noopener">Visit climateforward.howardcountymd.gov &rarr;</a>
+      </div>
+
+      <div class="data-source-card reveal">
+        <span class="data-source-card__meta">Source 2 &middot; County GIS &amp; open data</span>
+        <h3>Howard County Open Data / GIS Portal</h3>
+        <p>The county&rsquo;s open-data and mapping hub, including the Digital Flood Insurance Rate Map (DFIRM) viewer, regulated floodplain layers, and the green infrastructure network showing forests, wetlands, and stream buffers the county is working to preserve.</p>
+        <p><strong>Use it for:</strong> looking up whether your specific address sits in a mapped 100- or 500-year floodplain, and for browsing raw GIS layers the county maintains directly.</p>
+        <a class="data-source-card__link" href="https://data.howardcountymd.gov/" target="_blank" rel="noopener">Visit data.howardcountymd.gov &rarr;</a>
+        <a class="data-source-card__link" href="https://opendata.howardcountymd.gov/" target="_blank" rel="noopener" style="margin-left:1rem;">Visit opendata.howardcountymd.gov &rarr;</a>
+      </div>
+
+      <div class="data-source-card reveal">
+        <span class="data-source-card__meta">Source 3 &middot; Statewide GIS &amp; FEMA</span>
+        <h3>Maryland iMAP + FEMA Flood Maps</h3>
+        <p>Maryland iMAP is the state&rsquo;s GIS data catalog, covering floodplain and environmental layers statewide &mdash; useful for seeing how Howard County&rsquo;s watersheds connect to the broader Patapsco and Chesapeake Bay systems. FEMA&rsquo;s flood maps, mirrored for Maryland at mdfloodmaps.net, are the authoritative federal source behind flood insurance requirements.</p>
+        <p><strong>Use it for:</strong> statewide context on floodplains and environmental layers, and for the federal flood map your mortgage lender or insurer will actually reference.</p>
+        <a class="data-source-card__link" href="https://data.imap.maryland.gov/" target="_blank" rel="noopener">Visit data.imap.maryland.gov &rarr;</a>
+        <a class="data-source-card__link" href="https://mdfloodmaps.net/" target="_blank" rel="noopener" style="margin-left:1rem;">Visit mdfloodmaps.net &rarr;</a>
+      </div>
+    </section>
+
+    <section class="wrap section prose reveal">
+      <span class="eyebrow">A note on how we use this data</span>
+      <h2>Overview, not diagnosis</h2>
+      <p>Every statistic and hotspot on this site traces back to one of the three sources above, cited at the bottom of each page. Where the county publishes a specific figure &mdash; a percentage, a ranking, a named location &mdash; we use it directly rather than estimating. Where we describe a general pattern, like pavement holding heat, we say so plainly rather than dressing it up as a precise measurement. If a number on this site looks off, the source link is the place to check first.</p>
+    </section>
+
+    <section class="wrap citations">
+      <h2>Sources</h2>
+      <ol>
+        <li id="cite-1">Howard County Office of Community Sustainability, <em>Climate Forward</em> dashboard. <a href="https://climateforward.howardcountymd.gov/" target="_blank" rel="noopener">climateforward.howardcountymd.gov</a></li>
+        <li id="cite-2">Howard County GIS / Open Data portal. <a href="https://data.howardcountymd.gov/" target="_blank" rel="noopener">data.howardcountymd.gov</a> &middot; <a href="https://opendata.howardcountymd.gov/" target="_blank" rel="noopener">opendata.howardcountymd.gov</a></li>
+        <li id="cite-3">Maryland iMAP GIS Data Catalog and FEMA flood maps. <a href="https://data.imap.maryland.gov/" target="_blank" rel="noopener">data.imap.maryland.gov</a> &middot; <a href="https://mdfloodmaps.net/" target="_blank" rel="noopener">mdfloodmaps.net</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <svg class="topo-line topo-line--footer env-anim" viewBox="0 0 1200 48" width="1200" height="48" preserveAspectRatio="none" aria-hidden="true">
+      <path class="env-wave-line" d="M -140 24 Q -105 15, -70 23.65 Q -35 32, 0 24 Q 35 14, 70 23.65 Q 105 31.5, 140 24.35 Q 175 14.5, 210 23.475 Q 245 32.5, 280 24.175 Q 315 13.5, 350 23.825 Q 385 32, 420 24.525 Q 455 15, 490 23.65 Q 525 32, 560 24 Q 595 14, 630 23.65 Q 665 31.5, 700 24.35 Q 735 14.5, 770 23.475 Q 805 32.5, 840 24.175 Q 875 13.5, 910 23.825 Q 945 32, 980 24.525 Q 1015 15, 1050 23.65 Q 1085 32, 1120 24 Q 1155 14, 1190 23.65 Q 1225 31.5, 1260 24.35 Q 1295 14.5, 1330 23.475 Q 1365 32.5, 1400 24.175" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+    </svg>
+    <div class="wrap site-footer__top">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__brand">
+            <img src="../assets/images/environmento-logo.png" alt="" width="34" height="34">
+            <span>Environmento</span>
+          </div>
+          <p>A community education project connecting Howard County residents to the climate data their own county already collects.</p>
+        </div>
+        <div>
+          <h2>Site</h2>
+          <ul>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="hotspots.html">Hotspots map</a></li>
+            <li><a href="data.html">Data sources</a></li>
+            <li><a href="about.html">About &amp; methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Official tools</h2>
+          <ul>
+            <li><a href="https://climateforward.howardcountymd.gov/" target="_blank" rel="noopener">Climate Forward dashboard</a></li>
+            <li><a href="https://data.howardcountymd.gov/" target="_blank" rel="noopener">Howard County Open Data</a></li>
+            <li><a href="https://data.imap.maryland.gov/" target="_blank" rel="noopener">Maryland iMAP catalog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <span>&copy; <span id="current-year">2026</span> Environmento. A community project, not a government publication.</span>
+      <span>Data last reviewed 2026-07-06.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

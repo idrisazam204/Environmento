@@ -1,0 +1,61 @@
+{
+  "lastUpdated": "2026-07-06",
+  "hotspots": [
+    {
+      "id": "ellicott-city-main-st",
+      "name": "Historic Ellicott City / Main Street",
+      "lat": 39.2673,
+      "lng": -76.7983,
+      "issue": "flood",
+      "severity": "high",
+      "description": "Main Street sits at the bottom of a steep valley where five streams funnel into the Tiber-Hudson watershed. Flash floods in July 2016 and May 2018 killed four people and destroyed dozens of storefronts within minutes of the water rising.",
+      "whatsBeingDone": "The county's Safe and Sound Ellicott City program has since removed several buildings at the west end of Main Street to widen the floodway, built a new culvert and retention system, and installed a stream flood-warning network.",
+      "source": {
+        "label": "Howard County Climate Forward — Flood Risk",
+        "url": "https://climateforward.howardcountymd.gov/"
+      }
+    },
+    {
+      "id": "wilde-lake-village-center",
+      "name": "Wilde Lake Village Center, Columbia",
+      "lat": 39.2298,
+      "lng": -76.8781,
+      "issue": "heat",
+      "severity": "high",
+      "description": "Wilde Lake Village Center has the highest heat vulnerability score of any location in Howard County, according to Climate Forward's vulnerability index. Extensive parking, aging pavement, and thin tree cover around the original 1960s village center hold heat well after sundown.",
+      "whatsBeingDone": "Columbia Association and the county have identified the village center as a priority site for tree canopy expansion and pavement reduction as part of ongoing streetscape planning.",
+      "source": {
+        "label": "Howard County Climate Forward — Heat Vulnerability Index",
+        "url": "https://climateforward.howardcountymd.gov/"
+      }
+    },
+    {
+      "id": "route-1-corridor",
+      "name": "Jessup, Hanover & Elkridge (Route 1 corridor)",
+      "lat": 39.1712,
+      "lng": -76.7297,
+      "issue": "heat",
+      "severity": "elevated",
+      "description": "The warehouses, truck lots, and wide asphalt frontage along the Route 1 corridor create some of the county's largest expanses of impervious surface with minimal shade. Climate Forward flags this southeastern corridor as elevated risk for heat vulnerability tied to land cover, not just temperature.",
+      "whatsBeingDone": "The county's forest conservation and green infrastructure programs target this corridor for tree planting and stormwater retrofits tied to redevelopment review.",
+      "source": {
+        "label": "Howard County Climate Forward — Heat Vulnerability Index",
+        "url": "https://climateforward.howardcountymd.gov/"
+      }
+    },
+    {
+      "id": "patapsco-valley-mead-oella",
+      "name": "Patapsco River / Valley Mead & Oella-adjacent lowlands",
+      "lat": 39.2721,
+      "lng": -76.7527,
+      "issue": "flood",
+      "severity": "elevated",
+      "description": "Low-lying land along the Patapsco River near Valley Mead and the Oella side of the valley sits within mapped 100- and 500-year floodplains. Rises on the river here are slower and more predictable than the Main Street flash floods, but still regularly close River Road and the Grist Mill Trail.",
+      "whatsBeingDone": "These reaches are monitored under the county's regulated floodplain program, and portions are held as permanent open space through Patapsco Valley State Park to keep floodwater off developed land.",
+      "source": {
+        "label": "Howard County GIS — DFIRM Floodplain Viewer",
+        "url": "https://data.howardcountymd.gov/"
+      }
+    }
+  ]
+}
