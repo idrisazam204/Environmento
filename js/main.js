@@ -1,4 +1,3 @@
-// Environmento — shared site behavior (nav toggle, footer year)
 (function () {
   "use strict";
 
@@ -11,7 +10,6 @@
       var isOpen = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(isOpen));
     });
-
     nav.addEventListener("click", function (event) {
       if (event.target.tagName === "A") {
         nav.classList.remove("is-open");
@@ -19,12 +17,10 @@
       }
     });
   }
-
   function initFooterYear() {
     var el = document.getElementById("current-year");
     if (el) el.textContent = String(new Date().getFullYear());
   }
-
   // Fade + translate-up reveals, staggered ~100ms per sibling, once each.
   function initReveals() {
     var els = document.querySelectorAll(".reveal");
@@ -50,7 +46,6 @@
     }, { threshold: 0.15 });
     els.forEach(function (el) { io.observe(el); });
   }
-
   // Idle SVG loops only run while their wrapper is on screen.
   function initAnimToggles() {
     var els = document.querySelectorAll(".env-anim");
