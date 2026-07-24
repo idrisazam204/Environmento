@@ -1,38 +1,30 @@
 # Image sources
 
-This site ships with SVG placeholder graphics in this folder, not real photographs. Each `<img>` tag already has descriptive `alt` text for the intended photo. Before publishing, replace the placeholders below with real, legally-usable images of Howard County. Do not hotlink or copy images directly from news sites, Google Images, or other copyrighted sources.
+All three editorial photos on this site are real, CC-licensed photographs sourced from Wikimedia Commons, resized for web use. Do not hotlink or copy images directly from news sites, Google Images, or other copyrighted sources — everything below has been checked for license and attributed accordingly.
 
-## Where to find real, legally-usable Howard County photos
+## Photos currently in use
 
-### 1. Wikimedia Commons
-Search [commons.wikimedia.org](https://commons.wikimedia.org) — most uploads are CC-BY, CC-BY-SA, or public domain, and Commons shows the exact license and required attribution on every file page.
+| File | Subject | Photographer | License | Source |
+|---|---|---|---|---|
+| `ellicott-city-flood-main-street.jpg` | Main Street, Ellicott City, during recovery from the July 2016 flash flood | Joe Haupt | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Main_Street_Ellicott_City,_Maryland_--_Two_Months_After_The_Flood_Of_July_30,_2016_(29438072114).jpg) |
+| `wilde-lake-village-center-summer.jpg` | Wilde Lake, Columbia, shoreline view | Andrew Bossi | [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2008_04_23_-_Columbia_-_Wilde_Lake.jpg) |
+| `patapsco-river-tree-canopy.jpg` | Forest canopy, McKeldin Area, Patapsco Valley State Park | Andrew Parlette | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Patapsco_Valley_Forest_in_Autumn_(52455510256).jpg) |
 
-- Search "Ellicott City flood" — there is a well-documented set of 2016 and 2018 flash flood photos from Main Street, some from Maryland National Guard and NOAA uploads.
-- Search "Patapsco Valley State Park" for river, gorge, and tree canopy shots along the Patapsco.
-- Search "Columbia Maryland lakefront" or "Wilde Lake" for Columbia village-center and lake imagery.
+Attribution for each photo is displayed directly in its `<figcaption>` on `pages/issues.html` (photographer name + license link), which satisfies the "give appropriate credit" requirement of both licenses. Each image was resized/recompressed from the original for web performance — both CC BY and CC BY-SA permit this ("indicate if changes were made"), which the captions also note.
 
-Always click through to the file page and copy the attribution text exactly as Commons specifies (photographer name, license type, and a link back to the source page).
+**Important note on `wilde-lake-village-center-summer.jpg`'s license (CC BY-SA):** the "ShareAlike" clause only applies if you distribute a *modified/derivative* version of the image itself (e.g., publish an edited crop separately). Resizing for display on this site and simply showing it with attribution does not trigger ShareAlike obligations for the rest of the site's code or content — only a redistributed derivative of that specific image would need to carry the same license. If you ever build something (a print, a poster, a separate download) that reuses this specific photo in modified form, that derivative would need to be CC BY-SA 2.5 too.
 
-### 2. Howard County Government official channels
-Howard County Government publishes press and event photography intended for public and media use:
+## If you need to swap or add photos later
 
-- Howard County Government Flickr account — search for county-published albums covering Ellicott City recovery, county parks, and community events.
-- Howard County Government press releases and newsroom pages (howardcountymd.gov) often include downloadable press photos tied to specific announcements (e.g., Safe and Sound Ellicott City progress updates).
+### Where to find real, legally-usable Howard County photos
 
-Check the specific usage terms on each album or release before use; government-produced photos are often public domain or usable with attribution, but confirm per source.
+1. **Wikimedia Commons** ([commons.wikimedia.org](https://commons.wikimedia.org)) — search by subject (e.g. "Ellicott City flood," "Patapsco Valley State Park," "Wilde Lake Columbia"). Every file page states its exact license and required attribution — always use the file page's own wording, licenses vary (CC BY vs. CC BY-SA carry different obligations, see note above).
+2. **Howard County Government official channels** — the county's Flickr account and newsroom pages (howardcountymd.gov) occasionally publish press photography intended for public/media use. Check the specific usage terms per album; not all are open-licensed.
+3. **NOAA / USGS public domain imagery** — works produced by U.S. federal employees in the course of their duties are public domain (no attribution legally required, though it's good practice). NOAA's National Weather Service and USGS Water Resources both publish flood-documentation imagery for the Patapsco watershed.
 
-### 3. NOAA / USGS public domain imagery
-Works produced by U.S. federal agencies are generally public domain:
+### Steps to swap a photo
 
-- NOAA's National Weather Service Baltimore/Washington office has published flood documentation photos from the 2016 and 2018 Ellicott City events.
-- USGS maintains streamgage and flood-documentation photography for the Patapsco River watershed, searchable through the USGS Water Resources site and USGS multimedia gallery.
-
-## Replacing a placeholder
-
-Each placeholder is a plain SVG with a text label describing the intended photo (e.g., `ellicott-city-flood-main-street.svg`). To swap in a real photo:
-
-1. Download the real image and save it into this folder with a matching descriptive filename (e.g., `ellicott-city-flood-main-street.jpg`).
-2. Update the `src` attribute on the corresponding `<img>` tag in `/pages/issues.html` (or wherever it's used) to point to the new file.
-3. Keep the existing `alt` text, or refine it to describe the actual photo more precisely.
-4. Apply the same visual treatment used elsewhere on the site — the `.issue-block__figure img` CSS rule already applies a slight desaturation so mixed photo sources look cohesive; no extra editing is required unless the source photo is very high-contrast.
-5. Note the source and license/attribution for the new image somewhere near this file (e.g., append a line to this document) so the credit isn't lost later.
+1. Verify the license on the source's file page and note the required attribution text.
+2. Download the image, resize for web (this site's photos are ~900px wide, JPEG quality ~70 — `sips -s format jpeg -s formatOptions 70 --resampleWidth 900 input.jpg --out output.jpg` on macOS).
+3. Save into this folder with a descriptive filename, update the `src` in the relevant `<img>` tag, and write accurate `alt` text describing what the photo *actually* shows (not an idealized/invented scene — alt text should be verifiably true, both for accessibility and to avoid misrepresenting sourced content).
+4. Add the attribution to the image's `<figcaption>` (photographer name + link to the license), and update the table above so the credit isn't lost later.

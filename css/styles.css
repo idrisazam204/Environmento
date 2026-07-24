@@ -3,6 +3,24 @@
    Design system: earthy, editorial, restrained.
    ========================================================= */
 
+/* Self-hosted fonts (not loaded from Google's CDN) so no visitor IP
+   addresses are sent to a third party on page load. Both are variable
+   fonts, so one file each covers the full weight range used on the site. */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("../assets/fonts/fraunces-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-variable.woff2") format("woff2");
+}
+
 :root {
   /* Patapsco valley palette */
   --forest: #2d4a32;
@@ -757,7 +775,7 @@ table.hotspot-table {
 
 /* Illustration sizing: modest, never dominating the section */
 .issue-block__icon {
-  width: 260px;
+  width: 320px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -778,9 +796,13 @@ body.has-scrolled .hero__scroll-hint {
 /* Idle loops: keyframes for each asset's animated parts */
 @keyframes env-wave-drift {
   0% { transform: translate(0, 0); }
-  25% { transform: translate(-35px, -13px); }
+  12.5% { transform: translate(-17.5px, -19px); }
+  25% { transform: translate(-35px, 0); }
+  37.5% { transform: translate(-52.5px, -19px); }
   50% { transform: translate(-70px, 0); }
-  75% { transform: translate(-105px, -13px); }
+  62.5% { transform: translate(-87.5px, -19px); }
+  75% { transform: translate(-105px, 0); }
+  87.5% { transform: translate(-122.5px, -19px); }
   100% { transform: translate(-140px, 0); }
 }
 @keyframes env-river-bob {
