@@ -8,8 +8,8 @@
       "lng": -76.7983,
       "issue": "flood",
       "severity": "high",
-      "description": "Main Street sits at the bottom of a steep valley where five streams funnel into the Tiber-Hudson watershed. Flash floods in July 2016 and May 2018 killed four people and destroyed dozens of storefronts within minutes of the water rising.",
-      "whatsBeingDone": "The county's Safe and Sound Ellicott City program has since removed several buildings at the west end of Main Street to widen the floodway, built a new culvert and retention system, and installed a stream flood-warning network.",
+      "description": "Main Street sits at the bottom of a steep valley where five streams funnel into the Tiber-Hudson watershed. The flash floods of July 2016 and May 2018 killed three people between them and tore through dozens of storefronts within minutes.",
+      "whatsBeingDone": "Since then, the county's Safe and Sound Ellicott City program has removed several buildings at the west end of Main Street to widen the floodway, built a new culvert and retention system, and put in a stream flood-warning network.",
       "source": {
         "label": "Howard County Climate Forward — Flood Risk",
         "url": "https://climateforward.howardcountymd.gov/"
@@ -22,8 +22,8 @@
       "lng": -76.8781,
       "issue": "heat",
       "severity": "high",
-      "description": "Wilde Lake Village Center has the highest heat vulnerability score of any location in Howard County, according to Climate Forward's vulnerability index. Extensive parking, aging pavement, and thin tree cover around the original 1960s village center hold heat well after sundown.",
-      "whatsBeingDone": "Columbia Association and the county have identified the village center as a priority site for tree canopy expansion and pavement reduction as part of ongoing streetscape planning.",
+      "description": "Wilde Lake Village Center scores highest for heat vulnerability anywhere in Howard County, according to Climate Forward's index. The parking lots, aging pavement, and thin tree cover around the original 1960s village center hold onto heat long after sundown.",
+      "whatsBeingDone": "Columbia Association and the county have flagged the village center as a priority for tree canopy expansion and pavement reduction in ongoing streetscape planning.",
       "source": {
         "label": "Howard County Climate Forward — Heat Vulnerability Index",
         "url": "https://climateforward.howardcountymd.gov/"
@@ -36,10 +36,10 @@
       "lng": -76.7297,
       "issue": "heat",
       "severity": "elevated",
-      "description": "The warehouses, truck lots, and wide asphalt frontage along the Route 1 corridor create some of the county's largest expanses of impervious surface with minimal shade. Climate Forward flags this southeastern corridor as elevated risk for heat vulnerability tied to land cover, not just temperature.",
-      "whatsBeingDone": "The county's forest conservation and green infrastructure programs target this corridor for tree planting and stormwater retrofits tied to redevelopment review.",
+      "description": "The warehouses, truck lots, and wide asphalt frontage along the Route 1 corridor add up to some of the county's largest stretches of paved, unshaded ground. Climate Forward flags this southeastern corridor as elevated risk for heat, driven by land cover more than temperature alone.",
+      "whatsBeingDone": "The county's forest conservation and green infrastructure programs have this corridor marked for tree planting and stormwater retrofits as redevelopment comes through.",
       "source": {
-        "label": "Howard County Climate Forward — Heat Vulnerability Index",
+        "label": "Howard County Climate Forward: Heat Vulnerability Index",
         "url": "https://climateforward.howardcountymd.gov/"
       }
     },
