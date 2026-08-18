@@ -1,19 +1,8 @@
 # Environmento
 
-A community education website about climate issues in Howard County, Maryland — flooding, extreme heat, and stormwater/water quality — built on real data from Howard County Climate Forward, the Howard County Open Data / GIS portal, and the Maryland iMAP GIS Data Catalog.
+A community education website about climate issues in Howard County, Maryland: flooding, extreme heat, and stormwater/water quality, built on real data from Howard County Climate Forward, the Howard County Open Data / GIS portal, and the Maryland iMAP GIS Data Catalog. NOTE: This is meant to be a simple high school project, and IS NOT an official government website.
 
-Plain HTML, CSS, and vanilla JavaScript. No build step, no framework. The interactive map uses [Leaflet.js](https://leafletjs.com/) via CDN with OpenStreetMap tiles.
-
-## Running it locally
-
-Because the site uses `fetch()` to load `data/hotspots.json`, opening `index.html` directly from disk (`file://`) will fail in most browsers due to CORS restrictions on local file access. Serve it over a local HTTP server instead:
-
-```bash
-cd Environmento
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000` in your browser. Any static file server works (`npx serve`, VS Code's Live Server extension, etc.) — this one just requires no installation on most systems.
+Plain HTML, CSS, and JavaScript. The interactive map uses [Leaflet.js](https://leafletjs.com/) via CDN with OpenStreetMap tiles.
 
 ## File structure
 
