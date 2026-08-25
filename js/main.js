@@ -21,7 +21,8 @@
     var el = document.getElementById("current-year");
     if (el) el.textContent = String(new Date().getFullYear());
   }
-  // Fade + translate-up reveals, staggered ~100ms per sibling, once each.
+  // Change animation time? Increase ms?
+  // Don't know yet.
   function initReveals() {
     var els = document.querySelectorAll(".reveal");
     if (!els.length) return;
@@ -46,7 +47,8 @@
     }, { threshold: 0.15 });
     els.forEach(function (el) { io.observe(el); });
   }
-  // Idle SVG loops only run while their wrapper is on screen.
+  // Simple loops running WHILE on screen
+  // No need for change
   function initAnimToggles() {
     var els = document.querySelectorAll(".env-anim");
     if (!els.length || !("IntersectionObserver" in window)) return;
@@ -58,7 +60,7 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  // Scroll hint fades out permanently after the first scroll.
+  // Scroll hint thingy, makes it disappear once the user scrolls once
   function initScrollHint() {
     if (!document.querySelector(".hero__scroll-hint")) return;
     window.addEventListener("scroll", function () {
