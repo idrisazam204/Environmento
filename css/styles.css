@@ -1,5 +1,5 @@
 /* =========================================================
-   Environmento — Howard County climate awareness site
+   Environmento: Howard County climate awareness site
    Design system: earthy, editorial, restrained.
    ========================================================= */
 
@@ -767,7 +767,7 @@ table.hotspot-table {
 }
 
 /* =========================================================
-   Motion — animated line-art illustrations + scroll reveals
+   Motion: animated line-art illustrations + scroll reveals
    ========================================================= */
 
 /* Recolor the wave asset's hardcoded stroke to inherit .topo-line's color */
@@ -824,7 +824,7 @@ body.has-scrolled .hero__scroll-hint {
   50% { opacity: 1; transform: translateY(6px); }
 }
 
-/* No animation exists until JS marks the wrapper visible — assigning the
+/* No animation exists until JS marks the wrapper visible. Assigning the
    animation fresh (rather than toggling animation-play-state on a paused
    animation) avoids a WebKit/Safari bug where animations created already
    paused sometimes never start even after switching to "running". */

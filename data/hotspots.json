@@ -11,7 +11,7 @@
       "description": "Main Street sits at the bottom of a steep valley where five streams funnel into the Tiber-Hudson watershed. The flash floods of July 2016 and May 2018 killed three people between them and tore through dozens of storefronts within minutes.",
       "whatsBeingDone": "Since then, the county's Safe and Sound Ellicott City program has removed several buildings at the west end of Main Street to widen the floodway, built a new culvert and retention system, and put in a stream flood-warning network.",
       "source": {
-        "label": "Howard County Climate Forward — Flood Risk",
+        "label": "Howard County Climate Forward: Flood Risk",
         "url": "https://climateforward.howardcountymd.gov/"
       }
     },
@@ -25,11 +25,11 @@
       "description": "Wilde Lake Village Center scores highest for heat vulnerability anywhere in Howard County, according to Climate Forward's index. The parking lots, aging pavement, and thin tree cover around the original 1960s village center hold onto heat long after sundown.",
       "whatsBeingDone": "Columbia Association and the county have flagged the village center as a priority for tree canopy expansion and pavement reduction in ongoing streetscape planning.",
       "source": {
-        "label": "Howard County Climate Forward — Heat Vulnerability Index",
+        "label": "Howard County Climate Forward: Heat Vulnerability Index",
         "url": "https://climateforward.howardcountymd.gov/"
       }
     },
-    {
+    { 
       "id": "route-1-corridor",
       "name": "Jessup, Hanover & Elkridge (Route 1 corridor)",
       "lat": 39.1712,
@@ -53,7 +53,7 @@
       "description": "Low-lying land along the Patapsco River near Valley Mead and the Oella side of the valley sits within mapped 100- and 500-year floodplains. Rises on the river here are slower and more predictable than the Main Street flash floods, but still regularly close River Road and the Grist Mill Trail.",
       "whatsBeingDone": "These reaches are monitored under the county's regulated floodplain program, and portions are held as permanent open space through Patapsco Valley State Park to keep floodwater off developed land.",
       "source": {
-        "label": "Howard County GIS — DFIRM Floodplain Viewer",
+        "label": "Howard County GIS: DFIRM Floodplain Viewer",
         "url": "https://data.howardcountymd.gov/"
       }
     }

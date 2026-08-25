@@ -1,4 +1,4 @@
-// Environmento — Hotspots map
+// Environmento: Hotspots map
 // Renders a Leaflet map of documented climate hotspots in Howard County,
 // synced with an accessible filterable table below it.
 (function () {

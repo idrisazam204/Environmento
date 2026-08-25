@@ -7,7 +7,7 @@ Plain HTML, CSS, and JavaScript. The interactive map uses [Leaflet.js](https://l
 ## File structure
 
 ```
-index.html          Homepage — intro, three issue teasers, link to Hotspots
+index.html          Homepage: intro, three issue teasers, link to Hotspots
 pages/
   issues.html        Longer explainers per issue + "what residents can do"
   hotspots.html      The centerpiece: interactive map + synced accessible table
@@ -19,7 +19,7 @@ js/
   main.js            Shared behavior: mobile nav toggle, footer year
   map.js             Leaflet map setup, marker rendering, filters, table sync
 data/
-  hotspots.json       All hotspot content — edit this to update the map/list
+  hotspots.json       All hotspot content (edit this to update the map/list)
 assets/images/
   environmento-logo.png       Site logo
   *.svg                        Placeholder graphics (see IMAGE_SOURCES.md to replace with real photos)
@@ -28,7 +28,7 @@ assets/images/
 
 ## Updating the hotspots map
 
-All hotspot content lives in `data/hotspots.json` — nothing about a hotspot is hardcoded in `hotspots.html` or `map.js`. To add, remove, or edit a hotspot, edit this file only.
+All hotspot content lives in `data/hotspots.json`. Nothing about a hotspot is hardcoded in `hotspots.html` or `map.js`. To add, remove, or edit a hotspot, edit this file only.
 
 Each entry looks like:
 
@@ -51,11 +51,11 @@ Each entry looks like:
 
 Notes:
 
-- `issue` must be exactly one of `"flood"`, `"heat"`, or `"water"` — these three values drive marker color, filter chips, and table filtering. Adding a fourth issue type requires also adding a filter chip in `hotspots.html` and a color/label entry in `map.js` (`ISSUE_COLORS`, `ISSUE_LABELS`).
-- `severity` must be `"high"` or `"elevated"` — these drive the badge style (`.badge--high` / `.badge--elevated` in `styles.css`) and marker size.
-- `lat`/`lng` are decimal degrees. Howard County spans roughly 39.10–39.37 N, -76.65 to -77.19 W — sanity-check new coordinates fall in that range.
+- `issue` must be exactly one of `"flood"`, `"heat"`, or `"water"`: these three values drive marker color, filter chips, and table filtering. Adding a fourth issue type requires also adding a filter chip in `hotspots.html` and a color/label entry in `map.js` (`ISSUE_COLORS`, `ISSUE_LABELS`).
+- `severity` must be `"high"` or `"elevated"`: these drive the badge style (`.badge--high` / `.badge--elevated` in `styles.css`) and marker size.
+- `lat`/`lng` are decimal degrees. Howard County spans roughly 39.10–39.37 N, -76.65 to -77.19 W. Sanity-check new coordinates fall in that range.
 - Update the top-level `"lastUpdated"` field (`YYYY-MM-DD`) whenever you touch this file; it displays in the hotspot table caption on the Hotspots page.
-- No build step is needed — save the file and reload the page.
+- No build step is needed. Save the file and reload the page.
 
 ## Content policy
 
@@ -63,6 +63,6 @@ Every statistic and hotspot on this site should trace back to one of exactly thr
 
 ## Before publishing
 
-- Replace the SVG placeholders in `assets/images/` with real photographs — see `assets/images/IMAGE_SOURCES.md` for where to legally source Howard County imagery.
+- Replace the SVG placeholders in `assets/images/` with real photographs. See `assets/images/IMAGE_SOURCES.md` for where to legally source Howard County imagery.
 - Fill in the contact placeholder on `pages/about.html`.
 - Double check all three external source links still resolve (county sites occasionally reorganize URLs).
