@@ -1,11 +1,3 @@
-/* =========================================================
-   Environmento: Howard County climate awareness site
-   Design system: earthy, editorial, restrained.
-   ========================================================= */
-
-/* Self-hosted fonts (not loaded from Google's CDN) so no visitor IP
-   addresses are sent to a third party on page load. Both are variable
-   fonts, so one file each covers the full weight range used on the site. */
 @font-face {
   font-family: "Fraunces";
   font-style: normal;
@@ -22,7 +14,6 @@
 }
 
 :root {
-  /* Patapsco valley palette */
   --forest: #2d4a32;
   --forest-dark: #1e331f;
   --cream: #faf7f0;
@@ -43,7 +34,7 @@
   --container: 1180px;
 }
 
-/* ---------- Reset ---------- */
+/* Reset code */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
@@ -71,8 +62,6 @@ ul, ol { padding-left: 1.3em; }
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
-
-/* ---------- Skip link & focus ---------- */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -98,8 +87,6 @@ a:focus-visible, button:focus-visible {
   outline: 3px solid var(--clay-dark);
   outline-offset: 2px;
 }
-
-/* ---------- Layout helpers ---------- */
 .wrap {
   max-width: var(--container);
   margin: 0 auto;
@@ -133,7 +120,7 @@ a:focus-visible, button:focus-visible {
   white-space: nowrap;
 }
 
-/* ---------- Topographic motif ---------- */
+/* Over all topo colors set */
 .topo-line {
   display: block;
   width: 100%;
@@ -143,7 +130,7 @@ a:focus-visible, button:focus-visible {
 }
 .topo-line--footer { color: var(--cream); opacity: 0.5; }
 
-/* ---------- Header ---------- */
+/* Header*/
 .site-header {
   border-bottom: 1px solid var(--rule-strong);
   background: var(--cream);
@@ -215,8 +202,6 @@ a:focus-visible, button:focus-visible {
   font-size: 1.2rem;
   color: var(--forest-dark);
 }
-
-/* ---------- Hero ---------- */
 .hero {
   padding: 3.5rem 0 3rem;
   border-bottom: 1px solid var(--rule);
@@ -273,8 +258,6 @@ a:focus-visible, button:focus-visible {
 .hero-cta:hover { background: var(--forest); }
 .hero-cta:focus-visible { outline-offset: 3px; }
 .hero-cta__arrow { font-size: 1.1em; }
-
-/* ---------- Issue teasers ---------- */
 .teasers {
   padding: 3rem 0;
 }
@@ -328,8 +311,6 @@ a:focus-visible, button:focus-visible {
   text-decoration: none;
 }
 .teaser a.teaser__more:hover { text-decoration: underline; }
-
-/* ---------- Callout / feature band ---------- */
 .callout {
   background: var(--forest-dark);
   color: var(--cream-deep);
@@ -350,15 +331,13 @@ a:focus-visible, button:focus-visible {
   margin-top: 0;
 }
 .callout .hero-cta:hover { background: var(--clay-dark); }
-
-/* ---------- Sections generic ---------- */
 .section { padding: 3rem 0; }
 .section--tight { padding: 2rem 0; }
 .section h2 {
   font-size: clamp(1.6rem, 2.6vw, 2.1rem);
 }
 
-/* ---------- Page header (interior pages) ---------- */
+/* Interior pages' header */
 .page-head {
   padding: 2.75rem 0 2rem;
   border-bottom: 1px solid var(--rule);
@@ -378,7 +357,7 @@ a:focus-visible, button:focus-visible {
 }
 .breadcrumb a { color: var(--teal); }
 
-/* ---------- Issue explainer blocks (issues.html) ---------- */
+/* 3 issue block code(aniimation)*/
 .issue-block {
   padding: 3rem 0;
   border-bottom: 1px solid var(--rule);
@@ -444,7 +423,7 @@ a:focus-visible, button:focus-visible {
 .action-list ul { padding-left: 1.1em; }
 .action-list li { margin-bottom: 0.6em; }
 
-/* ---------- Hotspots map page ---------- */
+/* Hotspots map code */
 .map-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -581,8 +560,6 @@ table.hotspot-table {
   padding: 0;
   text-decoration: underline;
 }
-
-/* Leaflet popup theming */
 .leaflet-popup-content-wrapper {
   background: var(--cream);
   color: var(--charcoal);
@@ -606,7 +583,7 @@ table.hotspot-table {
   font-size: 0.8rem;
 }
 
-/* ---------- Data page ---------- */
+/* Data Page CSS */
 .data-source-card {
   border: 1px solid var(--rule-strong);
   padding: 1.75rem;
@@ -631,7 +608,7 @@ table.hotspot-table {
 }
 .data-source-card__link:hover { border-color: var(--clay-dark); }
 
-/* ---------- About page ---------- */
+/* ABout Page CSS */
 .methodology-list {
   list-style: none;
   padding: 0;
@@ -649,7 +626,7 @@ table.hotspot-table {
 }
 .methodology-list dd { margin: 0; }
 
-/* ---------- Footnotes / citations ---------- */
+/* Citations(IMPORTANT: DON't EDIT) */
 .citations {
   padding: 2.5rem 0 1rem;
   border-top: 1px solid var(--rule-strong);
@@ -669,8 +646,6 @@ table.hotspot-table {
 }
 .citations li { margin-bottom: 0.5em; }
 .citations a { color: var(--clay-dark); }
-
-/* ---------- Footer ---------- */
 .site-footer {
   background: var(--forest-dark);
   color: var(--cream-deep);
@@ -717,7 +692,7 @@ table.hotspot-table {
   gap: 0.5rem;
 }
 
-/* ---------- Responsive ---------- */
+/* Anim */
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; }
   .hero__aside {
@@ -793,7 +768,7 @@ body.has-scrolled .hero__scroll-hint {
   pointer-events: none;
 }
 
-/* Idle loops: keyframes for each asset's animated parts */
+/* Loops for the anim parts, edit percentage values for brighter/ligther in sun */
 @keyframes env-wave-drift {
   0% { transform: translate(0, 0); }
   12.5% { transform: translate(-17.5px, -19px); }
@@ -823,18 +798,13 @@ body.has-scrolled .hero__scroll-hint {
   0%, 100% { opacity: 0.25; transform: translateY(0); }
   50% { opacity: 1; transform: translateY(6px); }
 }
-
-/* No animation exists until JS marks the wrapper visible. Assigning the
-   animation fresh (rather than toggling animation-play-state on a paused
-   animation) avoids a WebKit/Safari bug where animations created already
-   paused sometimes never start even after switching to "running". */
 .env-anim.is-visible .env-wave-line { animation: env-wave-drift 3.5s ease-in-out infinite; }
 .env-anim.is-visible .env-river-water { animation: env-river-bob 1.2s ease-in-out infinite; }
 .env-anim.is-visible .env-sun-ray { animation: env-sun-ray-pulse 4s ease-in-out infinite; }
 .env-anim.is-visible .env-drop { animation: env-drop-fall 1.8s ease-in infinite; }
 .env-anim.is-visible .env-scroll { animation: env-scroll-pulse 1.8s ease-in-out infinite; }
 
-/* Scroll reveals: fade + translate up, staggered by JS via --reveal-delay */
+/* Scroll reveal code */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -846,7 +816,7 @@ body.has-scrolled .hero__scroll-hint {
   transform: translateY(0);
 }
 
-/* Hover: cards lift slightly and border shifts toward terracotta (desktop only) */
+/* Only works on desktop(scroll cover reveal) */
 @media (hover: hover) and (pointer: fine) {
   .teaser, .data-source-card, .action-list {
     transition: transform 150ms ease, border-color 150ms ease;
