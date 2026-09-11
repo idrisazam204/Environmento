@@ -6,5 +6,6 @@ Plain HTML, CSS, and JavaScript. The interactive map uses [Leaflet.js](https://l
 
 
 Might work on phone compatibility later, currently is hard to use on phone.
+Home page done, working on other pages
 
 NOTE: Will add more to README later
