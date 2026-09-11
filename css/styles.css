@@ -338,7 +338,7 @@ a:focus-visible, button:focus-visible {
   font-size: clamp(1.6rem, 2.6vw, 2.1rem);
 }
 
-/* Interior pages' header */
+/* Interior page header */
 .page-head {
   padding: 2.75rem 0 2rem;
   border-bottom: 1px solid var(--rule);
@@ -742,7 +742,7 @@ table.hotspot-table {
   .hero__aside { flex-direction: column; gap: 1rem; }
 
   /* Header: let the brand block shrink instead of forcing horizontal overflow
-     (flex items don't shrink below their content width by default) */
+     (flex items don't shrink below their content width by default) phone edit, tweak height and fontsize as see fit*/
   .site-header__bar { flex-wrap: nowrap; }
   .brand { min-width: 0; }
   .brand__text { min-width: 0; }
@@ -765,14 +765,9 @@ table.hotspot-table {
   .methodology-list li { padding: 0.9rem 0; }
 }
 
-/* =========================================================
-   Motion: animated line-art illustrations + scroll reveals
-   ========================================================= */
-
 /* Recolor the wave asset's hardcoded stroke to inherit .topo-line's color */
 .env-wave-line { stroke: currentColor; }
 
-/* Illustration sizing: modest, never dominating the section */
 .issue-block__icon {
   width: 100%;
   max-width: 320px;
