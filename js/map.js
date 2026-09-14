@@ -96,7 +96,7 @@
       });
       marker.bindPopup(buildPopupHtml(spot), { maxWidth: 280 });
       marker.on("click", function () {
-        focusHotspot(spot, { scrollToRow: true });
+        focusHotspot(spotwd, { scrollToRow: true });
       });
       marker.addTo(map);
       markerById[spot.id] = marker;
@@ -107,10 +107,10 @@
     var rowsHtml = hotspots.map(function (spot) {
       return (
         "<tr data-id=\"" + spot.id + "\" tabindex=\"0\">" +
-          "<td>" + escapeHtml(spot.name) + "</td>" +
-          "<td>" + ISSUE_LABELS[spot.issue] + "</td>" +
-          '<td><span class="badge badge--' + spot.severity + '">' + SEVERITY_LABELS[spot.severity] + "</span></td>" +
-          "<td>" + escapeHtml(spot.description) + "</td>" +
+          "<td data-label=\"Location\">" + escapeHtml(spot.name) + "</td>" +
+          "<td data-label=\"Issue\">" + ISSUE_LABELS[spot.issue] + "</td>" +
+          '<td data-label="Severity"><span class="badge badge--' + spot.severity + '">' + SEVERITY_LABELS[spot.severity] + "</span></td>" +
+          "<td data-label=\"Description\">" + escapeHtml(spot.description) + "</td>" +
           "<td><button type=\"button\" class=\"row-link\" data-id=\"" + spot.id + "\">Show on map</button></td>" +
         "</tr>"
       );

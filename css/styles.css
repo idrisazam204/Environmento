@@ -769,10 +769,45 @@ table.hotspot-table {
      line on a phone, that left margin reads as a stray indent */
   .data-source-card__link { margin-left: 0 !important; display: block; margin-top: 0.5em; }
 
-  /* Hotspots table: tighter cells so the four-column table reads better
-     without introducing horizontal scroll */
-  .hotspot-table th, .hotspot-table td { padding: 0.65rem 0.75rem; }
-  table.hotspot-table { font-size: 0.88rem; }
+  /* Hotspots table: a 4-column table can't fit a phone width without
+     squeezing "Description" into a sliver that wraps into a long,
+     unreadable stack of short lines. Instead, stack each row into a
+     full-width card with small labels, same pattern used everywhere
+     else on the page for body text. Row/cell click and keyboard
+     handling in map.js only depend on data-id and tabindex, both
+     untouched, so all interactivity keeps working. */
+  .hotspot-table thead {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0; border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .hotspot-table, .hotspot-table caption, .hotspot-table tbody, .hotspot-table tr, .hotspot-table td {
+    display: block;
+    width: 100%;
+  }
+  .hotspot-table tbody tr {
+    padding: 1rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .hotspot-table td {
+    padding: 0.3rem 0;
+    border-top: none;
+  }
+  .hotspot-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    margin-bottom: 0.2em;
+  }
+  .hotspot-table td:last-child { padding-top: 0.6rem; }
 }
 
 /* Recolor the wave asset's hardcoded stroke to inherit .topo-line's color */
