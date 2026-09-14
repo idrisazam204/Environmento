@@ -763,6 +763,16 @@ table.hotspot-table {
   .hero__stat { font-size: 2.1rem; }
   .stat-strip { gap: 1.5rem; }
   .methodology-list li { padding: 0.9rem 0; }
+
+  /* Data page: secondary source links carry an inline margin-left meant
+     for sitting side-by-side on one line; once they wrap to their own
+     line on a phone, that left margin reads as a stray indent */
+  .data-source-card__link { margin-left: 0 !important; display: block; margin-top: 0.5em; }
+
+  /* Hotspots table: tighter cells so the four-column table reads better
+     without introducing horizontal scroll */
+  .hotspot-table th, .hotspot-table td { padding: 0.65rem 0.75rem; }
+  table.hotspot-table { font-size: 0.88rem; }
 }
 
 /* Recolor the wave asset's hardcoded stroke to inherit .topo-line's color */
