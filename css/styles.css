@@ -68,7 +68,6 @@ ul, ol { padding-left: 1.3em; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
 .skip-link {
   position: absolute;
@@ -927,13 +926,19 @@ body.has-scrolled .hero__scroll-hint {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* Stop the looping ambient SVG animations outright rather than pausing
+     them mid-cycle. Each of these elements' un-animated state (its plain
+     SVG attributes, with no CSS transform/opacity override) already renders
+     as a sensible static image -- checked frame-by-frame against each
+     @keyframes block above, so no extra static overrides are needed here. */
   .env-wave-line, .env-river-water, .env-sun-ray, .env-drop, .env-scroll {
-    animation-play-state: paused !important;
+    animation: none !important;
   }
+  /* Scroll-reveal keeps an opacity-only fade; only the translateY travel
+     is removed. */
   .reveal {
-    opacity: 1 !important;
+    transition: opacity 0.4s ease-out !important;
     transform: none !important;
-    transition: none !important;
   }
   .hero__scroll-hint { display: none; }
 }
